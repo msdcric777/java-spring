@@ -1,5 +1,8 @@
 pipeline{
    agent any
+   options{
+      timestamps()
+      overrideIndexTriggers(true)
    stages{
       stage('first'){
       when{
